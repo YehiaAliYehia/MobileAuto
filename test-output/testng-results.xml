@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateAddProductToCart on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_45_34.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateAddProductToCart on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_45_34.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateIncreaseProductQuatity on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_14.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateIncreaseProductQuatity on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_14.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateEverySizeHasTheCorrectPrice on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_53.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateEverySizeHasTheCorrectPrice on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_53.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateOnSharingScreen on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_47_33.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateOnSharingScreen on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_47_33.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateSelectingItemSize on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_48_13.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateSelectingItemSize on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_48_13.png' height='100' width='100'/> </a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-08-30T23:44:38 EET" name="Default Suite" finished-at="2021-08-30T23:48:30 EET" duration-ms="232248">
+    <groups>
+    </groups>
+    <test started-at="2021-08-30T23:44:38 EET" name="Test_Goldenscent" finished-at="2021-08-30T23:48:30 EET" duration-ms="232248">
+      <class name="appTests.Test1">
+        <test-method is-config="true" signature="initializeClassTestData()[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:44:38 EET" name="initializeClassTestData" finished-at="2021-08-30T23:44:57 EET" duration-ms="18865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeClassTestData -->
+        <test-method is-config="true" signature="initializeClassTestCaseData()[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:44:57 EET" name="initializeClassTestCaseData" finished-at="2021-08-30T23:45:01 EET" duration-ms="3860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeClassTestCaseData -->
+        <test-method signature="validateAddProductToCart()[pri:1, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:45:01 EET" name="validateAddProductToCart" finished-at="2021-08-30T23:45:34 EET" duration-ms="32838" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.AccessibilityId: Dummy2 (tried for 30 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: Dummy2 (tried for 30 second(s) with 1000 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at appPages.PageBase.waitUntil(PageBase.java:24)
+at appPages.Product_Screen.addItemToCart(Product_Screen.java:25)
+at appTests.Test1.validateAddProductToCart(Test1.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q48UDK1', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
+*** Element info: {Using=accessibility id, value=Dummy2}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddProductToCart -->
+        <test-method is-config="true" signature="clearTestData(org.testng.ITestResult)[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:45:34 EET" name="clearTestData" finished-at="2021-08-30T23:45:37 EET" duration-ms="3420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAddProductToCart on [Test1 passed=0 failed=0 skipped=0] status=FAILURE method=Test1.validateAddProductToCart()[pri:1, instance:[Test1 passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateAddProductToCart on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_45_34.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateAddProductToCart on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_45_34.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clearTestData -->
+        <test-method is-config="true" signature="initializeClassTestCaseData()[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:45:37 EET" name="initializeClassTestCaseData" finished-at="2021-08-30T23:45:41 EET" duration-ms="3842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeClassTestCaseData -->
+        <test-method signature="validateIncreaseProductQuatity()[pri:2, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:45:41 EET" name="validateIncreaseProductQuatity" finished-at="2021-08-30T23:46:14 EET" duration-ms="32691" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.AccessibilityId: Dummy2 (tried for 30 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: Dummy2 (tried for 30 second(s) with 1000 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at appPages.PageBase.waitUntil(PageBase.java:24)
+at appPages.Product_Screen.addItemToCart(Product_Screen.java:25)
+at appTests.Test1.validateIncreaseProductQuatity(Test1.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q48UDK1', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
+*** Element info: {Using=accessibility id, value=Dummy2}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIncreaseProductQuatity -->
+        <test-method is-config="true" signature="clearTestData(org.testng.ITestResult)[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:46:14 EET" name="clearTestData" finished-at="2021-08-30T23:46:16 EET" duration-ms="2972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateIncreaseProductQuatity on [Test1 passed=0 failed=0 skipped=0] status=FAILURE method=Test1.validateIncreaseProductQuatity()[pri:2, instance:[Test1 passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateIncreaseProductQuatity on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_14.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateIncreaseProductQuatity on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_14.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clearTestData -->
+        <test-method is-config="true" signature="initializeClassTestCaseData()[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:46:16 EET" name="initializeClassTestCaseData" finished-at="2021-08-30T23:46:20 EET" duration-ms="3768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeClassTestCaseData -->
+        <test-method signature="validateEverySizeHasTheCorrectPrice()[pri:3, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:46:20 EET" name="validateEverySizeHasTheCorrectPrice" finished-at="2021-08-30T23:46:53 EET" duration-ms="32569" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummySize (tried for 30 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummySize (tried for 30 second(s) with 1000 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at appPages.PageBase.waitUntil(PageBase.java:24)
+at appPages.Product_Screen.validateEverySizePrice(Product_Screen.java:46)
+at appTests.Test1.validateEverySizeHasTheCorrectPrice(Test1.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q48UDK1', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
+*** Element info: {Using=accessibility id, value=DummySize}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEverySizeHasTheCorrectPrice -->
+        <test-method is-config="true" signature="clearTestData(org.testng.ITestResult)[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:46:53 EET" name="clearTestData" finished-at="2021-08-30T23:46:56 EET" duration-ms="3005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEverySizeHasTheCorrectPrice on [Test1 passed=0 failed=0 skipped=0] status=FAILURE method=Test1.validateEverySizeHasTheCorrectPrice()[pri:3, instance:[Test1 passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateEverySizeHasTheCorrectPrice on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_53.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateEverySizeHasTheCorrectPrice on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_46_53.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clearTestData -->
+        <test-method is-config="true" signature="initializeClassTestCaseData()[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:46:56 EET" name="initializeClassTestCaseData" finished-at="2021-08-30T23:47:00 EET" duration-ms="3861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeClassTestCaseData -->
+        <test-method signature="validateOnSharingScreen()[pri:3, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:47:00 EET" name="validateOnSharingScreen" finished-at="2021-08-30T23:47:33 EET" duration-ms="32815" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummyBtn (tried for 30 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummyBtn (tried for 30 second(s) with 1000 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at appPages.PageBase.waitUntil(PageBase.java:24)
+at appPages.Product_Screen.shareProduct(Product_Screen.java:54)
+at appTests.Test1.validateOnSharingScreen(Test1.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q48UDK1', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
+*** Element info: {Using=accessibility id, value=DummyBtn}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOnSharingScreen -->
+        <test-method is-config="true" signature="clearTestData(org.testng.ITestResult)[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:47:33 EET" name="clearTestData" finished-at="2021-08-30T23:47:36 EET" duration-ms="3079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateOnSharingScreen on [Test1 passed=0 failed=0 skipped=0] status=FAILURE method=Test1.validateOnSharingScreen()[pri:3, instance:[Test1 passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateOnSharingScreen on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_47_33.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateOnSharingScreen on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_47_33.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clearTestData -->
+        <test-method is-config="true" signature="initializeClassTestCaseData()[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:47:36 EET" name="initializeClassTestCaseData" finished-at="2021-08-30T23:47:39 EET" duration-ms="3896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeClassTestCaseData -->
+        <test-method signature="validateSelectingItemSize()[pri:3, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:47:39 EET" name="validateSelectingItemSize" finished-at="2021-08-30T23:48:13 EET" duration-ms="33248" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummySize (tried for 30 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummySize (tried for 30 second(s) with 1000 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at appPages.PageBase.waitUntil(PageBase.java:24)
+at appPages.Product_Screen.selectItemSize(Product_Screen.java:39)
+at appTests.Test1.validateSelectingItemSize(Test1.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q48UDK1', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
+*** Element info: {Using=accessibility id, value=DummySize}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSelectingItemSize -->
+        <test-method is-config="true" signature="clearTestData(org.testng.ITestResult)[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:48:13 EET" name="clearTestData" finished-at="2021-08-30T23:48:16 EET" duration-ms="2952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateSelectingItemSize on [Test1 passed=0 failed=0 skipped=0] status=FAILURE method=Test1.validateSelectingItemSize()[pri:3, instance:[Test1 passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateSelectingItemSize on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_48_13.png'> <img src='F:\Test_Goldenscent\bugsrecorder\screenshots\failure_screenshots\validateSelectingItemSize on [Test1 passed=0 failed=0 skipped=0]_30_08_2021_11_48_13.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clearTestData -->
+        <test-method is-config="true" signature="clearTestClassTestData()[pri:0, instance:[Test1 passed=0 failed=0 skipped=0]]" started-at="2021-08-30T23:48:16 EET" name="clearTestClassTestData" finished-at="2021-08-30T23:48:30 EET" duration-ms="14491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearTestClassTestData -->
+      </class> <!-- appTests.Test1 -->
+    </test> <!-- Test_Goldenscent -->
+  </suite> <!-- Default Suite -->
+</testng-results>

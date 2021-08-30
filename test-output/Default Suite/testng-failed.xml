@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test_Goldenscent(failed)">
+    <classes>
+      <class name="appTests.Test1">
+        <methods>
+          <include name="validateEverySizeHasTheCorrectPrice"/>
+          <include name="validateSelectingItemSize"/>
+          <include name="validateIncreaseProductQuatity"/>
+          <include name="validateOnSharingScreen"/>
+          <include name="clearTestData"/>
+          <include name="clearTestClassTestData"/>
+          <include name="initializeClassTestCaseData"/>
+          <include name="initializeClassTestData"/>
+          <include name="validateAddProductToCart"/>
+        </methods>
+      </class> <!-- appTests.Test1 -->
+    </classes>
+  </test> <!-- Test_Goldenscent(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
