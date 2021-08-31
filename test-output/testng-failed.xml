@@ -5,15 +5,12 @@
     <classes>
       <class name="appTests.Test1">
         <methods>
-          <include name="validateEverySizeHasTheCorrectPrice"/>
-          <include name="validateSelectingItemSize"/>
-          <include name="validateIncreaseProductQuatity"/>
-          <include name="validateOnSharingScreen"/>
+          <include name="validateOnContinueShopping"/>
+          <include name="validateAddProductToCartBtnIsWorking"/>
           <include name="clearTestData"/>
           <include name="clearTestClassTestData"/>
           <include name="initializeClassTestCaseData"/>
           <include name="initializeClassTestData"/>
-          <include name="validateAddProductToCart"/>
         </methods>
       </class> <!-- appTests.Test1 -->
     </classes>

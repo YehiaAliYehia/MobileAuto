@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Default Suite</span>
+              <span class="suite-name border-passed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,41 +91,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 5 failed,   </span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
-                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_Suite">
+                    <div class="method-list-content passed suite-Default_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateAddProductToCart">validateAddProductToCart</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateAddProductToCartBtnIsWorking">validateAddProductToCartBtnIsWorking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateEverySizeHasTheCorrectPrice">validateEverySizeHasTheCorrectPrice</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateItemSizeIsSelectable">validateItemSizeIsSelectable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateIncreaseProductQuatity">validateIncreaseProductQuatity</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateOnContinueShopping">validateOnContinueShopping</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateOnPriceAndSizeDisplay">validateOnPriceAndSizeDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateOnSharingScreen">validateOnSharingScreen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="appTests.Test1" class="method navigator-link" hash-for-method="validateSelectingItemSize">validateSelectingItemSize</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,157 +137,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
-          <div class="suite-Default_Suite-class-failed">
+          <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">appTests.Test1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateAddProductToCart">
-                  </a> <!-- validateAddProductToCart -->
-                  <span class="method-name">validateAddProductToCart</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: Dummy2 (tried for 30 second(s) with 1000 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at appPages.PageBase.waitUntil(PageBase.java:24)
-	at appPages.Product_Screen.addItemToCart(Product_Screen.java:25)
-	at appTests.Test1.validateAddProductToCart(Test1.java:11)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q48UDK1&apos;, ip: &apos;192.168.1.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
-*** Element info: {Using=accessibility id, value=Dummy2}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="validateAddProductToCartBtnIsWorking">
+                  </a> <!-- validateAddProductToCartBtnIsWorking -->
+                  <span class="method-name">validateAddProductToCartBtnIsWorking</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateEverySizeHasTheCorrectPrice">
-                  </a> <!-- validateEverySizeHasTheCorrectPrice -->
-                  <span class="method-name">validateEverySizeHasTheCorrectPrice</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummySize (tried for 30 second(s) with 1000 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at appPages.PageBase.waitUntil(PageBase.java:24)
-	at appPages.Product_Screen.validateEverySizePrice(Product_Screen.java:46)
-	at appTests.Test1.validateEverySizeHasTheCorrectPrice(Test1.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q48UDK1&apos;, ip: &apos;192.168.1.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
-*** Element info: {Using=accessibility id, value=DummySize}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="validateItemSizeIsSelectable">
+                  </a> <!-- validateItemSizeIsSelectable -->
+                  <span class="method-name">validateItemSizeIsSelectable</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateIncreaseProductQuatity">
-                  </a> <!-- validateIncreaseProductQuatity -->
-                  <span class="method-name">validateIncreaseProductQuatity</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: Dummy2 (tried for 30 second(s) with 1000 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at appPages.PageBase.waitUntil(PageBase.java:24)
-	at appPages.Product_Screen.addItemToCart(Product_Screen.java:25)
-	at appTests.Test1.validateIncreaseProductQuatity(Test1.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q48UDK1&apos;, ip: &apos;192.168.1.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
-*** Element info: {Using=accessibility id, value=Dummy2}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="validateOnContinueShopping">
+                  </a> <!-- validateOnContinueShopping -->
+                  <span class="method-name">validateOnContinueShopping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateOnPriceAndSizeDisplay">
+                  </a> <!-- validateOnPriceAndSizeDisplay -->
+                  <span class="method-name">validateOnPriceAndSizeDisplay</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -295,101 +176,10 @@ Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
                   <a name="validateOnSharingScreen">
                   </a> <!-- validateOnSharingScreen -->
                   <span class="method-name">validateOnSharingScreen</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummyBtn (tried for 30 second(s) with 1000 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at appPages.PageBase.waitUntil(PageBase.java:24)
-	at appPages.Product_Screen.shareProduct(Product_Screen.java:54)
-	at appTests.Test1.validateOnSharingScreen(Test1.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q48UDK1&apos;, ip: &apos;192.168.1.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
-*** Element info: {Using=accessibility id, value=DummyBtn}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateSelectingItemSize">
-                  </a> <!-- validateSelectingItemSize -->
-                  <span class="method-name">validateSelectingItemSize</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: DummySize (tried for 30 second(s) with 1000 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at appPages.PageBase.waitUntil(PageBase.java:24)
-	at appPages.Product_Screen.selectItemSize(Product_Screen.java:39)
-	at appTests.Test1.validateSelectingItemSize(Test1.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-Q48UDK1&apos;, ip: &apos;192.168.1.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., appPackage: com.exa.nanamarket.staging, autoGrantPermissions: true, automationName: appium, databaseEnabled: false, desired: {adbExecTimeout: 10000000, app: F:\Test_Goldenscent/Applica..., autoGrantPermissions: true, automationName: appium, deviceName: Android Device, fullReset: false, newCommandTimeout: 100000, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: HUAWEI, deviceModel: JKM-LX1, deviceName: DEF4C19712004814, deviceScreenDensity: 408, deviceScreenSize: 1080x2340, deviceUDID: DEF4C19712004814, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100000, noReset: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 85, takesScreenshot: true, viewportRect: {height: 2052, left: 0, top: 85, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 0162fc8d-495d-4551-b7dd-958b8454ba88
-*** Element info: {Using=accessibility id, value=DummySize}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_Suite-class-failed -->
+          </div> <!-- suite-Default_Suite-class-passed -->
         </div> <!-- panel Default_Suite -->
         <div panel-name="test-xml-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -444,30 +234,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateSelectingItemSize')
+data.setCell(0, 1, 'validateAddProductToCartBtnIsWorking')
 data.setCell(0, 2, 'appTests.Test1')
-data.setCell(0, 3, 33248);
+data.setCell(0, 3, 24100);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateAddProductToCart')
+data.setCell(1, 1, 'validateOnPriceAndSizeDisplay')
 data.setCell(1, 2, 'appTests.Test1')
-data.setCell(1, 3, 32838);
+data.setCell(1, 3, 21049);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateOnSharingScreen')
+data.setCell(2, 1, 'validateOnContinueShopping')
 data.setCell(2, 2, 'appTests.Test1')
-data.setCell(2, 3, 32815);
+data.setCell(2, 3, 19305);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateIncreaseProductQuatity')
+data.setCell(3, 1, 'validateItemSizeIsSelectable')
 data.setCell(3, 2, 'appTests.Test1')
-data.setCell(3, 3, 32691);
+data.setCell(3, 3, 18706);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateEverySizeHasTheCorrectPrice')
+data.setCell(4, 1, 'validateOnSharingScreen')
 data.setCell(4, 2, 'appTests.Test1')
-data.setCell(4, 3, 32569);
+data.setCell(4, 3, 17270);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -500,77 +290,67 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">initializeClassTestCaseData</span>
-                <span class="method-start">18890 ms</span>
+                <span class="method-start">22572 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validateAddProductToCart</span>
-                <span class="method-start">22751 ms</span>
+                <span class="method-name">validateAddProductToCartBtnIsWorking</span>
+                <span class="method-start">27590 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">clearTestData([TestResult name=validateAddProductToCart on [Test1 passed=0 failed=0 skipped=0] status=FAILURE meth...)</span>
-                <span class="method-start">55599 ms</span>
+                <span class="method-name">clearTestData([TestResult name=validateAddProductToCartBtnIsWorking on [Test1 passed=0 failed=0 skipped=0] status=...)</span>
+                <span class="method-start">51692 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeClassTestCaseData</span>
-                <span class="method-start">59022 ms</span>
+                <span class="method-start">53483 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validateIncreaseProductQuatity</span>
-                <span class="method-start">62864 ms</span>
+                <span class="method-name">validateItemSizeIsSelectable</span>
+                <span class="method-start">57661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">clearTestData([TestResult name=validateIncreaseProductQuatity on [Test1 passed=0 failed=0 skipped=0] status=FAILUR...)</span>
-                <span class="method-start">95557 ms</span>
+                <span class="method-name">clearTestData([TestResult name=validateItemSizeIsSelectable on [Test1 passed=0 failed=0 skipped=0] status=SUCCESS ...)</span>
+                <span class="method-start">76367 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeClassTestCaseData</span>
-                <span class="method-start">98530 ms</span>
+                <span class="method-start">77753 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validateEverySizeHasTheCorrectPrice</span>
-                <span class="method-start">102298 ms</span>
+                <span class="method-name">validateOnContinueShopping</span>
+                <span class="method-start">81815 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">clearTestData([TestResult name=validateEverySizeHasTheCorrectPrice on [Test1 passed=0 failed=0 skipped=0] status=F...)</span>
-                <span class="method-start">134869 ms</span>
+                <span class="method-name">clearTestData([TestResult name=validateOnContinueShopping on [Test1 passed=0 failed=0 skipped=0] status=SUCCESS me...)</span>
+                <span class="method-start">101121 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeClassTestCaseData</span>
-                <span class="method-start">137877 ms</span>
+                <span class="method-start">102643 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
+                <span class="method-name">validateOnPriceAndSizeDisplay</span>
+                <span class="method-start">106844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">clearTestData([TestResult name=validateOnPriceAndSizeDisplay on [Test1 passed=0 failed=0 skipped=0] status=SUCCESS...)</span>
+                <span class="method-start">127894 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeClassTestCaseData</span>
+                <span class="method-start">129335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <span class="method-name">validateOnSharingScreen</span>
-                <span class="method-start">141738 ms</span>
+                <span class="method-start">133557 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">clearTestData([TestResult name=validateOnSharingScreen on [Test1 passed=0 failed=0 skipped=0] status=FAILURE metho...)</span>
-                <span class="method-start">174555 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initializeClassTestCaseData</span>
-                <span class="method-start">177636 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validateSelectingItemSize</span>
-                <span class="method-start">181533 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">clearTestData([TestResult name=validateSelectingItemSize on [Test1 passed=0 failed=0 skipped=0] status=FAILURE met...)</span>
-                <span class="method-start">214783 ms</span>
+                <span class="method-name">clearTestData([TestResult name=validateOnSharingScreen on [Test1 passed=0 failed=0 skipped=0] status=SUCCESS metho...)</span>
+                <span class="method-start">150827 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">clearTestClassTestData</span>
-                <span class="method-start">217735 ms</span>
+                <span class="method-start">152148 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

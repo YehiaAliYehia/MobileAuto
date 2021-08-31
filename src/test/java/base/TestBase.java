@@ -10,7 +10,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import appPages.Home_Screen;
 import appPages.Product_Screen;
+import appPages.Search_Results_Screen;
+import appPages.Search_Screen;
 import io.appium.java_client.*;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -43,11 +46,15 @@ public class TestBase extends TestListenerAdapter {
     protected MobileDriver<MobileElement> driver;
     public static AppiumDriverLocalService service;
 
-    protected String lastPackageName = "com.exa.nanamarket.staging";
+    protected String lastPackageName = "com.goldenscent.c3po";
     protected DesiredCapabilities capabilities;
     public static OS executionOS = OS.ANDROID;
 
     protected Product_Screen Product_Screen;
+    protected Home_Screen Home_Screen;
+    protected Search_Results_Screen Search_Results_Screen;
+    protected Search_Screen Search_Screen;
+
     private Object installApp;
 
 
@@ -64,12 +71,12 @@ public class TestBase extends TestListenerAdapter {
 // if application isn't installed , will install it.
                 if (installApp ) {
                     String appPath = System.getProperty("user.dir")
-                            + "/Application/Test.apk";
+                            + "/Application/Test1.apk";
                     capabilities.setCapability(MobileCapabilityType.APP, appPath);
                 } else {
-                    capabilities.setCapability("appPackage", "com.exa.nanamarket.staging");
+                    capabilities.setCapability("appPackage", "com.goldenscent.c3po");
                     // An activity name for the Android activity you want to run from your package.
-                    capabilities.setCapability("appActivity", "com.exa.nanamarket.login.SplashActivity");
+                    capabilities.setCapability("appActivity", "com.goldenscent.c3po.ui.activity.BottomNavigationBaseActivity");
                 }
 
 
@@ -118,9 +125,12 @@ public class TestBase extends TestListenerAdapter {
         // Initialize Pages objects
 
         Product_Screen = new Product_Screen();
+        Home_Screen = new Home_Screen();
+        Search_Results_Screen = new Search_Results_Screen();
+        Search_Screen = new Search_Screen();
 
 
-        // Wait loading screen
+                // Wait loading screen
         Thread.sleep(4000);
     }
 
